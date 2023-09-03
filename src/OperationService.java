@@ -1,3 +1,8 @@
+import consoleMethods.ConsoleReader;
+import consoleMethods.ConsoleWriter;
+import interfaces.Reader;
+import interfaces.Writer;
+
 import java.util.ArrayList;
 import java.util.List;
 

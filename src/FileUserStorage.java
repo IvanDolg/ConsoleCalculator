@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class FileUserStorage implements UserStorage{
+public class FileUserStorage implements UserStorage {
     File file = new File("src/DocFile/Session.txt");
     @Override
     public void save(User user) {

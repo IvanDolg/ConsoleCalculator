@@ -1,11 +1,15 @@
+import consoleMethods.ConsoleReader;
+import consoleMethods.ConsoleWriter;
+import interfaces.Reader;
+import interfaces.Writer;
+
 import java.util.List;
 
 public class Application {
     private final Reader reader = new ConsoleReader();
     private final Writer writer = new ConsoleWriter();
     private final OperationService operationService = new OperationService();
-    private final Registration registration = new Registration();
-    private final Identification identification = new Identification();
+    private final UserService userService = new UserService();
     private  boolean cond = true;
     public void start(){
         while (cond) {
@@ -40,11 +44,11 @@ public class Application {
             int action = (int) reader.readNumber();
             switch (action){
                 case 1:
-                    registration.singUp();
+                    userService.singUp();
                     userMenu();
                     break;
                 case 2:
-                    identification.loginIn();
+                    userService.loginIn();
                     userMenu();
                     break;
                 case 3:
