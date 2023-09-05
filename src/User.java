@@ -1,26 +1,25 @@
+import java.util.UUID;
+
 public class User {
     private String login;
     private String password;
-    private int userId;
-    public User(){
-    }
-
+    private UUID userId;
     public User(String login, String password) {
         this.login = login;
         this.password = password;
     }
 
-    public User(String login, String password, int userId) {
+    public User(String login, String password, UUID userId) {
         this.login = login;
         this.password = password;
         this.userId = userId;
     }
 
-    public int getUserId() {
+    public UUID getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(UUID userId) {
         this.userId = userId;
     }
 
